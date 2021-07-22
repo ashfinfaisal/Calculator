@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <style>
+        body{
+            font-size: 20px;
+            background-image: linear-gradient(to right , magenta, blue, darkcyan);
+        }
+        #AC{
+            background-color: black;
+            color: whitesmoke;
+            height: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Calculator</h1>
+    <script>
+        /*
+        Arithmetic Operators:
+
+        + : Addition
+        - : Subtraction
+        * : Multipication
+        / : Division
+        % : (MOD) It is used to find Remainders
+        */
+        function Calculator() {
+            var a=parseInt(prompt("First Number"))
+            b=parseInt(prompt("Second Number"))
+            c=a+b
+            d=a-b
+            e=a*b
+            f=a/b
+            g=a%b
+            document.write(+a+ " + "+b+ " = "+c+ '<br/>')
+            document.write(+a+ " - "+b+ " = "+d+ '<br/>')
+            document.write(+a+ " × "+b+ " = "+e+ '<br/>')
+            document.write(+a+ " ÷ "+b+ " = "+f+ '<br/>')
+            document.write("After Dividing "+a+ " and "+b+ ", The Remainder is "+g+ '<br/>')  
+        }
+        
+    </script>
+    <input type="button" value="Start/AC" onclick="Calculator()">
+
+</body>
+</html>
